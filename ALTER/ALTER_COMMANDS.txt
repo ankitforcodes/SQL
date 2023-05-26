@@ -1,6 +1,0 @@
-* Adding a Column:
-1. ALTER TABLE my_contacts  
-ADD COLUMN contact_id INT NOT NULL AUTO_INCREMENT FIRST, 
-ADD PRIMARY KEY (contact_id);
-2. ALTER TABLE my_contacts  
-ADD COLUMN phone VARCHAR(10);
