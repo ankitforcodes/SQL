@@ -18,6 +18,13 @@ select ename,deptno,sal
    from emp;
 
 -- You would like to change the names of the columns that are returned by your query so they are more readable and understandable
+-- It's called aliasing those columns
 select sal as salary, comm as commission
    from emp;
 
+-- Insead of returning columns, we want to create sentences using the columns and then return
+-- Example: instead of return emp_id and name as columns, we want to return: "Name of employee with ID 1 is Ankit"
+-- We use concat function for that
+select concat('Name of employee with ID', id,' is ', ename) as msg
+   from emp
+   where deptno=10;
